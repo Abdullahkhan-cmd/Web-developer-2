@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="friday06.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Curriculum Demo</h1>
+        <p>Learning HTML, step by step</p>
+    </header>
+    <nav>
+        <a href="#">Text</a>
+        <a href="#">Media</a>
+        <a href="#">Tables</a>
+        <a href="#">Lists</a>
+        <a href="#">Forms</a>
+    </nav>
+    <section>
+        <article>
+            <h2>Text Formating</h2>
+            <p><b>Bold text,</b><i>Italic text,</i><u>underlined text.</u></p>
+            <p>Here's a horizantal line:</p><hr>
+            <h2>Multimedia</h2>
+            <p>Embedded audio and video:</p>
+            <audio src="new_alarm_just_dropped.mp3" type="audio/mpeg" controls></audio>
+            <video src="6159201-hd_1920_1080_30fps.mp4" type="video/mp4" controls poster="pexels-albinberlin-919073.jpg" width="100%" height="100%"></video>
+            <hr>
+            <h2>
+                Tables
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Age
+                        </th>
+                        <th>
+                            City
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Babar 
+                        </td>
+                        <td>
+                            29
+                        </td>
+                        <td>
+                            Lahore
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            John
+                        </td>
+                        <td>
+                            30
+                        </td>
+                        <td>
+                            London
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Lists</h2>
+            <p>Here is an ordered & nested list</p>
+            <ol>
+                <li>HTML Basics</li>
+                <li>CSS Basics</li>
+                <li>JAVA SCRIPT Basics</li>
+            </ol>
+            <ol>
+                <li>Frontend
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ol>
+                </li>
+                <li>Backend
+                    <ol>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                    </ol>
+                </li>
+            </ol>
+            <hr>
+            <h2>Forms</h2>
+            <form action="/submit">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    
+                </fieldset>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="write your message here"></textarea>
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="pakistan">Pakistan</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="iran">Iran</option>
+                    <option value="australia">Australia</option>
+                    <option value="united-states">United States</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+
+
+        </article>
+        <aside>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Text Formating</a></li>
+                <li><a href="#">Multimedia</a></li>
+                <li><a href="#">table</a></li>
+                <li><a href="#">Lists</a></li>
+                <li><a href="#">Forms</a></li>
+            </ul>
+        </aside>
+    </section>
+    <footer>
+        <p>
+            &copy; 2024 HTML Curriculum Demo, All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>

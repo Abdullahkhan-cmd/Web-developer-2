@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        #form {
+            background-color: rgb(3, 173, 37);
+            border-radius: 30px;
+            cursor:wait;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 500px;
+            box-shadow: 6px 6px 12px 7px rgb(130, 148, 130);
+           }
+        body {
+            background-image: url(trees\ abstract.jpg);
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            
+           }
+        button {
+            cursor: cell;
+            color: rgb(13, 124, 13);
+            background-color: rgb(2, 31, 2);
+            border-radius: 20px;
+            width: 500px;
+            height: 25px;
+           }
+     
+           
+        button:hover{
+            background-color: rgb(8, 139, 8);
+            color: rgb(0, 0, 0);
+           }
+        input{
+            border-radius: 20px;
+            padding: 7px;
+           }
+        h1{
+            border: solid 5px rgb(3, 122, 3); 
+            border-radius: 20px;
+           }
+        label{
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           }
+        fieldset{
+            border-radius: 20px;
+           }
+    
+    </style>
+
+
+</head>
+
+<body>
+    
+    <form action="/submitform" align="center" id="form">
+        <h1>form for our internship</h1>
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+        </p>
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password" minlength="8"
+                maxlength="12">
+        </p>
+        <p>
+            <label for="contact">Contact no:</label><br>
+            <input type="tel" name="contact" id="contact" placeholder="Enter Your Phone">
+        </p>
+
+
+
+
+
+        <p>
+          
+        </p>
+        <p>
+          
+        </p>
+        <p>
+        <fieldset id="fieldset">
+            <legend> Gender</legend>
+            <p>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+            </p>
+            <p>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">female</label>
+            </p>
+        
+        </p>
+          <p>
+            </fieldset>
+        <fieldset id="fieldset">
+            <legend>play as a</legend>
+            <p>
+                <input type="radio" name="activity" id="trainer" value="trainer">
+                <label for="trainer">trainer</label>
+            </p>
+            <p>
+                <input type="radio" name="activity" id="trainee" value="trainee">
+                <label for="trainee">trainee</label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="Select">Please Select</label>
+            <Select>
+                <option selected> Choose your department</option>
+                <option value="Chemical department">Chemical department</option>
+                <option value="Mediical department">Mediical department</option>
+                <option value="CS department">CS department</option>
+            </Select>
+        </p>
+        <p>
+            <label for="file">Upload Your Document</label><br>
+            <input type="file" name="Document" id="file">
+        </p>
+
+        <p>
+            <label for="comment">Comments</label><br>
+            <textarea name="comment" id="comment" placeholder="Your Comments" required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+
+
+
+    </form>
+   
+</body>
+
+</html>
