@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="friday06.css">
 </head>
+
 <body>
     <header>
         <h1>HTML Curriculum Demo</h1>
         <p>Learning HTML, step by step</p>
     </header>
     <nav>
-        <a href="#">Text</a>
-        <a href="#">Media</a>
-        <a href="#">Tables</a>
-        <a href="#">Lists</a>
-        <a href="#">Forms</a>
+        <a href="#text">Text</a>
+        <a href="#media">Media</a>
+        <a href="#tables">Tables</a>
+        <a href="#lists">Lists</a>
+        <a href="#forms">Forms</a>
     </nav>
     <section>
         <article>
-            <h2>Text Formating</h2>
+            <h2 id="text">Text Formating</h2>
             <p><b>Bold text,</b><i>Italic text,</i><u>underlined text.</u></p>
-            <p>Here's a horizantal line:</p><hr>
-            <h2>Multimedia</h2>
+            <p>Here's a horizantal line:</p>
+            <hr>
+            <h2 id="media">Multimedia</h2>
             <p>Embedded audio and video:</p>
             <audio src="new_alarm_just_dropped.mp3" type="audio/mpeg" controls></audio>
-            <video src="6159201-hd_1920_1080_30fps.mp4" type="video/mp4" controls poster="pexels-albinberlin-919073.jpg" width="100%" height="100%"></video>
+            <video src="6159201-hd_1920_1080_30fps.mp4" type="video/mp4" controls poster="pexels-albinberlin-919073.jpg"
+                width="100%" height="100%"></video>
             <hr>
-            <h2>
+            <h2 id="tables">
                 Tables
             </h2>
             <table>
@@ -48,7 +52,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            Babar 
+                            Babar
                         </td>
                         <td>
                             29
@@ -71,7 +75,7 @@
                     </tr>
                 </tbody>
             </table>
-            <h2>Lists</h2>
+            <h2 id="lists">Lists</h2>
             <p>Here is an ordered & nested list</p>
             <ol>
                 <li>HTML Basics</li>
@@ -93,7 +97,7 @@
                 </li>
             </ol>
             <hr>
-            <h2>Forms</h2>
+            <h2 id="forms">Forms</h2>
             <form action="/submit">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
@@ -101,11 +105,15 @@
                 <input type="email" name="email" id="email" placeholder="Enter your email">
                 <fieldset>
                     <legend>Gender</legend>
-                    <input type="radio" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="female">
-                    <label for="female">Female</label>
-                    
+
+                    <label for="male">
+                        <input type="radio" name="gender" value="male">Male
+                    </label>
+
+                    <label for="female"><input type="radio" name="gender" id="female">Female
+
+                    </label>
+
                 </fieldset>
                 <label for="message">Message:</label>
                 <textarea name="message" id="message" placeholder="write your message here"></textarea>
@@ -125,11 +133,11 @@
         <aside>
             <h2>Quick Links</h2>
             <ul>
-                <li><a href="#">Text Formating</a></li>
-                <li><a href="#">Multimedia</a></li>
-                <li><a href="#">table</a></li>
-                <li><a href="#">Lists</a></li>
-                <li><a href="#">Forms</a></li>
+                <li><a href="#text">Text Formating</a></li>
+                <li><a href="#media">Multimedia</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#forms">Forms</a></li>
             </ul>
         </aside>
     </section>
@@ -139,4 +147,5 @@
         </p>
     </footer>
 </body>
+
 </html>
