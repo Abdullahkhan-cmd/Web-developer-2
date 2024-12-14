@@ -1,58 +1,138 @@
-body{
-    margin:0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 35px;
-    background-color: grey;
+html {
+    scroll-behavior: smooth;
 
 }
-header{
-    background-color: rgba(0, 0, 0, 0.89);
-    color: white;
-    padding: 20px;
-    text-align: center;
+
+@keyframes header {
+    from {
+        background: rgb(1, 1, 1);
+        background: radial-gradient(circle, rgba(1, 1, 1, 1) 0%, rgba(60, 60, 60, 1) 44%, rgba(226, 224, 224, 1) 100%);
+        padding: 5px;
+        color: aliceblue;
+    }
+
+    to {
+        background: rgb(226, 224, 224);
+        background: radial-gradient(circle, rgba(226, 224, 224, 1) 0%, rgba(60, 60, 60, 1) 61%, rgba(1, 1, 1, 1) 83%);
+        padding: 60px;
+    }
 }
-nav{
-    background-color: rgba(10, 10, 179, 0.904);
-    padding: 8px;
+
+@keyframes nav {
+    from {
+        background-color: rgb(0, 5, 77);
+        background: radial-gradient(circle, rgba(0, 5, 77, 1) 40%, rgba(0, 27, 166, 1) 65%, rgba(0, 42, 255, 1) 84%);
+
+        padding: 0px;
+    }
+
+    to {
+        background: rgb(0, 17, 255);
+        background: radial-gradient(circle, rgba(0, 17, 255, 1) 33%, rgba(6, 35, 187, 1) 48%, rgba(0, 6, 52, 1) 72%);
+
+        padding: 10px;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 35px;
+    background-color: rgb(226, 224, 224);
+    background: radial-gradient(circle, rgba(226, 224, 224, 1) 0%, rgba(135, 135, 135, 1) 35%, rgba(1, 1, 1, 1) 100%);
+
+
+
+
+
+}
+
+header {
+    background-color: rgb(226, 224, 224);
+    background: radial-gradient(circle, rgba(226, 224, 224, 1) 0%, rgba(60, 60, 60, 1) 61%, rgba(1, 1, 1, 1) 83%);
+    color: rgb(34, 33, 33);
+
+
+    padding: 60px;
+    text-align: center;
+    animation-name: header;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+
+
+}
+
+nav {
+    background: rgb(0, 17, 255);
+    background: radial-gradient(circle, rgba(0, 17, 255, 1) 33%, rgba(6, 35, 187, 1) 48%, rgba(0, 6, 52, 1) 72%);
+    padding: 10px;
     text-align: center;
     word-spacing: 40px;
-    
+
+    animation-name: nav;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+
 }
-a{
+
+nav a {
     text-decoration: none;
     color: aliceblue;
+    transition: all ease-in-out 0.3s;
 }
-section{
+
+nav a:hover {
+    box-shadow: 0px 1px 1px 30px rgb(1, 1, 1), 0px 1px 1px 50px rgb(1, 1, 1) inset;
+    border-radius: 50%;
+    padding: 10px;
+
+
+
+}
+
+section {
     display: flex;
     margin: 10px;
 }
-article{
-flex: 3;
-margin: 10px;
-background-color: rgba(240, 248, 255, 0.411);
-padding: 25px;
-height: 100%;
+
+article {
+    flex: 3;
+    margin: 10px;
+    background-color: rgba(240, 248, 255, 0.411);
+    padding: 25px;
+    height: 100%;
 
 }
-aside{
+
+aside {
     flex: 1;
     margin: 10px;
     background-color: rgba(240, 248, 255, 0.411);
     padding: 25px;
-   
+
 }
-table{
+
+table {
     width: 1000px;
     text-align: left;
     border-collapse: collapse;
 }
-th, td{
+
+th,
+td {
     border: 1px solid;
 }
-label{
+
+label {
     display: block;
 }
-input, select{
+
+input,
+select {
     width: 100%;
     padding: 5px;
     border-radius: 10px;
@@ -60,18 +140,21 @@ input, select{
 }
 
 
-input[type=radio]{
+input[type=radio] {
     width: auto;
-    margin-right:10px ;
-    
+    margin-right: 10px;
+
 }
-fieldset{
+
+fieldset {
     display: flex;
+    
     border: none;
-  
+
 }
-button{
-    padding:10px;
+
+button {
+    padding: 10px;
     width: 80px;
     background-color: rgb(41, 41, 206);
     color: aliceblue;
@@ -79,13 +162,11 @@ button{
     border-radius: 5px;
     margin-top: 10px;
 }
-footer{
-    background-color: rgb(0, 0, 0);
+
+footer {
+    background-color: rgb(226, 224, 224);
+    background: radial-gradient(circle, rgba(226, 224, 224, 1) 0%, rgba(60, 60, 60, 1) 61%, rgba(1, 1, 1, 1) 83%);
     padding: 20px;
     text-align: center;
-    color: aliceblue;
+    color: rgb(0, 6, 11);
 }
-
-
-
-   
